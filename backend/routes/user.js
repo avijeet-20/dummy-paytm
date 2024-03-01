@@ -174,5 +174,14 @@ try{
 }
 })
 
+router.get('/allusers', async (req,res)  => {
+         
+const data = await User.find({});
+
+res.json(data);
+
+} )
+
+
 
 module.exports = router
